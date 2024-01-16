@@ -15,7 +15,7 @@
     <button onclick="switchLanguage('pl')">PL</button>
     <button onclick="switchLanguage('en')">EN</button>
     <div id="pl" style="display: none;">
-        <!-- Cała zawartość strony w języku polskim --><html lang="pl">
+        <!-- Cała zawartość strony w języku polskim -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
