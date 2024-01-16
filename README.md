@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+#Jan Grudzinski's website
 <html>
 <head>
     <title>Jan Grudzinski's website</title>
@@ -28,4 +28,3 @@
     </footer>
 </body>
 </html>
-
