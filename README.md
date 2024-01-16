@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jan Grudziński - Cybersecurity Engineer</title>
+    <title>Jan Grudziński - Cyber Security Engineer</title>
     <link rel="stylesheet" href="styles.css">
     <script>
         function switchLanguage(lang) {
@@ -16,10 +16,10 @@
     <button onclick="switchLanguage('pl')">PL</button>
     <button onclick="switchLanguage('en')">EN</button>
     <div id="pl">
-        <!-- CaÅa zawartoÅÄ strony w jÄzyku polskim -->
+        <!-- cala zawartosc strony w języku  polskim -->
         <header>
-            <h1>Jan GrudziÅski</h1>
-            <h2>InÅ¼ynier CyberbezpieczeÅstwa</h2>
+            <h1>Jan Grudzinski </h1>
+            <h2>inżynier cyberbezpieczeństwa </h2>
         </header>
         <nav>
             <ul>
@@ -31,26 +31,26 @@
         <main>
             <section id="about">
                 <h2>O mnie</h2>
-                <p>Jestem inÅ¼ynierem cyberbezpieczeÅstwa z pasjÄ do technologii i ciÄgÅego uczenia siÄ.</p>
+                <p>Jestem inżynierem telekomunikacji z pasja do technologii i cyberbezpieczeństwa.</p>
             </section>
             <section id="education">
                 <h2>Edukacja</h2>
-                <p>UkoÅczyÅem studia inÅ¼ynierskie na Politechnice Warszawskiej na kierunku Telekomunikacja.</p>
+                <p>ukończyłem studia inżynierskie na Politechnice Warszawskiej na kierunku Telekomunikacja.</p>
                 <script src="https://tryhackme.com/badge/2315388"></script>
             </section>
         </main>
         <footer>
             <section id="contact">
                 <h2>Kontakt</h2>
-                <p>MoÅ¼esz siÄ ze mnÄ skontaktowaÄ poprzez email: jan.jakub.grudzinski@gmail.com</p>
+                <p>Moj adres email: jan.jakub.grudzinski@gmail.com</p>
             </section>
         </footer>
     </div>
     <div id="en" style="display: none;">
-        <!-- CaÅa zawartoÅÄ strony w jÄzyku angielskim -->
+        <!-- CaÅa zawartoÅÄ strony w jÄjęzyku angielskim -->
         <header>
             <h1>Jan GrudziÅski</h1>
-            <h2>Cybersecurity Engineer</h2>
+            <h2>Cyber Security Engineer</h2>
         </header>
         <nav>
             <ul>
