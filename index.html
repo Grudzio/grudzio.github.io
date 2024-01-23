@@ -2,32 +2,28 @@
 <head>
     <title>Jan Grudzinski's website</title>
     <link rel="stylesheet" href="styles.css">
-    
+    <script>
+        function switchLanguage(lang) {
+            document.getElementById('pl').style.display = lang === 'pl' ? 'block' : 'none';
+            document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
+        }
+    </script>
 </head>
-<body>
-    <header>
-        <h1>About</h1>
-    </header>
-    
-    <section>
-        <h2>About Me</h2>
-        <p style="word-wrap: break-word;">I am a telecommunications engineer with a passion for cybersecurity.
-             I have been working in the telecommunications industry for over 5 years</p>
-    </section>
-    
-    <section>
-        <h2>Education</h2>
-        <p style="word-wrap: break-word;">I graduated with a degree in engineering, majoring in Telecommunications,
-             from Warsaw University of Technology in 2019</p>
-    </section>
-    
-    <section>
-        <h2>Social Media</h2>
-        <p><script src="https://tryhackme.com/badge/2315388"></script></p>
-    </section>
-    
-    <footer>
-        <p>© 2022 My Website. All rights reserved.</p>
-    </footer>
+<body onload="switchLanguage('en')">
+    <button onclick="switchLanguage('pl')">PL</button>
+    <button onclick="switchLanguage('en')">EN</button>
+    <div id="pl" style="display: none;">
+        <!-- Cała zawartość strony w języku polskim -->
+    </div>
+    <div id="en" style="display: none;">
+        <header>
+            <h1>About me</h1>
+        </header>
+        <section>
+            <p style="word-wrap: break-word;">I am a telecommunications engineer with a passion for cybersecurity.
+                I have been working in the telecommunications industry for over 5 years</p>
+        </section>
+        <!-- Reszta zawartości strony w języku angielskim -->
+    </div>
 </body>
 </html>
