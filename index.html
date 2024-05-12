@@ -14,6 +14,29 @@
     <button onclick="switchLanguage('en')">EN</button>
     <div id="pl" style="display: none;">
         <!-- Cała zawartość strony w języku polskim -->
+        <head>
+            <title>Logowanie</title>
+            <script>
+                function login() {
+                    var username = document.getElementById('username').value;
+                    var password = document.getElementById('password').value;
+
+                    // Sprawdź, czy dane logowania są poprawne
+                    if(username === 'admin' && password === 'password') {
+                        // Jeżeli tak, przekieruj na prywatną stronę
+                        window.location.href = 'prywatna.html';
+                    } else {
+                        // Jeżeli nie, wyświetl błąd
+                        alert('Niepoprawne dane logowania!');
+                    }
+                }
+            </script>
+        </head>
+        <body>
+            <input type="text" id="username" placeholder="Nazwa użytkownika">
+            <input type="password" id="password" placeholder="Hasło">
+            <button onclick="login()">Zaloguj</button>
+        </body>
         <header>
             <h1>O mnie</h1>
         </header>
