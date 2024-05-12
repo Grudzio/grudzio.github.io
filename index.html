@@ -22,7 +22,7 @@
                     var password = document.getElementById('password').value;
 
                     // Sprawdź, czy dane logowania są poprawne
-                    if(username === 'admin' && password === 'password') {
+                    if(username === 'adminek' && password === 'haselko') {
                         // Jeżeli tak, przekieruj na prywatną stronę
                         window.location.href = 'prywatna.html';
                     } else {
@@ -50,11 +50,30 @@
         </section>
 
         <footer>
-            <p>© 2022 Moja strona internetowa. Wszelkie prawa zastrzeżone.</p>
+            <p>© 2024 Wszelkie prawa zastrzeżone.</p>
         </footer>
 
     </div>
     <div id="en" style="display: none;">
+        <!-- Cała zawartość strony w języku angielskim -->
+        <head>
+            <title>Login</title>
+            <script>
+                function login() {
+                    var username = document.getElementById('username').value;
+                    var password = document.getElementById('password').value;
+
+                    // Check if login credentials are correct
+                    if(username === 'adminek' && password === 'haselko') {
+                        // If so, redirect to private page
+                        window.location.href = 'private.html';
+                    } else {
+                        // If not, display an error
+                        alert('Incorrect login credentials!');
+                    }
+                }
+            </script>
+
         <header>
             <h1>About me</h1>
         </header>
@@ -68,7 +87,7 @@
         </section>
         
         <footer>
-            <p>© 2022 My Website. All rights reserved.</p>
+            <p>© 2024 All rights reserved.</p>
         </footer>
         <!-- Reszta zawartości strony w języku angielskim -->
     </div>
