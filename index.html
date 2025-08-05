@@ -26,8 +26,7 @@
     <button onclick="switchLanguage('pl')">PL</button>
     <button onclick="switchLanguage('en')">EN</button>
     <div id="pl" style="display: none;">
-        <!-- Cała zawartość strony w języku polskim -->
-        <section>
+        <section style="position: absolute; top: 0; right: 0;">
             <h2>Logowanie</h2>
             <form action="/login" method="post">
                 <label for="username">Nazwa użytkownika:</label><br>
@@ -55,6 +54,16 @@
 
     </div>
     <div id="en" style="display: none;">
+        <section style="position: absolute; top: 0; right: 0;">
+            <h2>Login</h2>
+            <form action="/login" method="post">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br>
+                <input type="submit" value="Log in">
+            </form>
+        </section>
         <header>
             <h1>About me</h1>
         </header>
@@ -65,16 +74,6 @@
         <section>
             <h2>Social Media</h2>
             <p><script src="https://tryhackme.com/badge/2315388"></script></p>
-        </section>
-        <section>
-            <h2>Login</h2>
-            <form action="/login" method="post">
-                <label for="username">Username:</label><br>
-                <input type="text" id="username" name="username"><br>
-                <label for="password">Password:</label><br>
-                <input type="password" id="password" name="password"><br>
-                <input type="submit" value="Log in">
-            </form>
         </section>
         
         <footer>
