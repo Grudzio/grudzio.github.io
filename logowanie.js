@@ -1,24 +1,32 @@
-document.querySelector('form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Zapobiega domyślnej akcji formularza, czyli odświeżeniu strony
+async function login(event) {
+    event.preventDefault();
 
-    var username = document.getElementById('username').value;
-    var password = document.getElementById('password').value;
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
 
-    var xhr = new XMLHttpRequest(); // Tworzy nowy obiekt XMLHttpRequest
-    xhr.open('POST', '/login', true); // Inicjuje nowe żądanie POST do '/login'
-    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded'); // Ustawia typ zawartości na formularz zakodowany w URL
+    try {
+        const response = await fetch('/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ username, password })
+        });
 
-    xhr.onreadystatechange = function() { // Definiuje funkcję, która zostanie wywołana, gdy stan żądania się zmieni
-        if (xhr.readyState == 4 && xhr.status == 200) { // Jeśli żądanie zostało zakończone i odpowiedź jest OK
-            var response = JSON.parse(xhr.responseText); // Parsuje odpowiedź z serwera z formatu JSON na obiekt JavaScript
-
-            if (response.message === 'Zalogowano pomyślnie!') {
-                window.location.href = '/private-page.html'; // Przekierowuje na nową stronę
-            } else if (response.message === 'Błędne dane logowania!') {
-                alert('Błędne dane logowania!'); // Wyświetla komunikat o błędzie
-            }
+        if (response.ok) {
+            const data = await response.json();
+            // Obsługa tokenu sesji lub przekierowanie użytkownika
+            console.log('Login successful:', data);
+            window.location.href = '/private-page.html';
+        } else {
+            console.error('Login failed:', response.statusText);
+            alert('Invalid username or password');
         }
-    };
+    } catch (error) {
+        console.error('Error during login:', error);
+        alert('An error occurred. Please try again later.');
+    }
+}
 
-    xhr.send('username=' + encodeURIComponent(username) + '&password=' + encodeURIComponent(password)); // Wysyła żądanie do serwera z danymi formularza
-});
+// Podpięcie funkcji do formularza logowania
+document.querySelector('form').addEventListener('submit', login);
