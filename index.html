@@ -13,6 +13,52 @@
    
     <title>Jan Grudzinski's website</title>
     <link rel="stylesheet" href="css/styles.css">
+    <meta name="description" content="Jan Grudziński - Inżynier telekomunikacji z pasją do cyberbezpieczeństwa.">
+    <meta name="keywords" content="telekomunikacja, cyberbezpieczeństwo, inżynier, wizytówka">
+    <meta name="author" content="Jan Grudziński">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #0078d7;
+            color: white;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #0078d7;
+            color: white;
+        }
+        img.profile {
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        @media (max-width: 768px) {
+            section {
+                margin: 10px;
+                padding: 10px;
+            }
+        }
+    </style>
     <script>
         /**
          * Switches the language of the webpage.
@@ -31,37 +77,41 @@
         <header>
             <h1>O mnie</h1>
         </header>
+        <img src="profile.png" alt="Zdjęcie profilowe" class="profile">
         <section>
-            <p style="word-wrap: break-word;">Jestem inżynierem telekomunikacji z pasją do cyberbezpieczeństwa.
-                Pracuję w branży telekomunikacyjnej od ponad 5 lat</p>
-        </section> 
+            <p>Jestem inżynierem telekomunikacji z pasją do cyberbezpieczeństwa. Pracuję w branży telekomunikacyjnej od ponad 5 lat.</p>
+        </section>
         <section>
             <h2>Media społecznościowe</h2>
-            <p><script src="https://tryhackme.com/badge/2315388"></script></p>
+            <div style="display: flex; gap: 20px; justify-content: center;">
+                <a href="https://tryhackme.com/p/grudek" target="_blank" title="TryHackMe"><img src="https://tryhackme.com/img/favicon.png" alt="TryHackMe" style="width:32px;height:32px;"></a>
+                <a href="https://github.com/grudzio" target="_blank" title="GitHub"><img src="https://github.githubassets.com/favicons/favicon.png" alt="GitHub" style="width:32px;height:32px;"></a>
+                <a href="https://www.linkedin.com/in/jan-grudzinski/" target="_blank" title="LinkedIn"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width:32px;height:32px;"></a>
+            </div>
         </section>
-
         <footer>
-            <p>© 2024 Wszelkie prawa zastrzeżone.</p>
+            <p>© 2025 Wszelkie prawa zastrzeżone.</p>
         </footer>
-
     </div>
     <div id="en" style="display: none;">
         <header>
             <h1>About me</h1>
         </header>
+        <img src="profile.jpg" alt="Profile picture" class="profile">
         <section>
-            <p style="word-wrap: break-word;">I am a telecommunications engineer with a passion for cybersecurity.
-                I have been working in the telecommunications industry for over 5 years</p>
+            <p>I am a telecommunications engineer with a passion for cybersecurity. I have been working in the telecommunications industry for over 5 years.</p>
         </section>
         <section>
             <h2>Social Media</h2>
-            <p><script src="https://tryhackme.com/badge/2315388"></script></p>
+            <div style="display: flex; gap: 20px; justify-content: center;">
+                <a href="https://tryhackme.com/p/grudek" target="_blank" title="TryHackMe"><img src="https://tryhackme.com/img/favicon.png" alt="TryHackMe" style="width:32px;height:32px;"></a>
+                <a href="https://github.com/grudzio" target="_blank" title="GitHub"><img src="https://github.githubassets.com/favicons/favicon.png" alt="GitHub" style="width:32px;height:32px;"></a>
+                <a href="https://www.linkedin.com/in/jan-grudzinski/" target="_blank" title="LinkedIn"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width:32px;height:32px;"></a>
+            </div>
         </section>
-        
         <footer>
-            <p>© 2024 All rights reserved.</p>
+            <p>© 2025 All rights reserved.</p>
         </footer>
-        <!-- Reszta zawartości strony w języku angielskim -->
     </div>
     <script src="js/main.js"></script>
 </body>
