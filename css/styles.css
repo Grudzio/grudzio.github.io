@@ -9,7 +9,23 @@ body {
     color: black;
 }
 
-/* Style dla ciemnego motywu */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #0078d7;
+    color: white;
+}
+
+.profile {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: black;
