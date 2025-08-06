@@ -28,16 +28,6 @@
     <button onclick="switchLanguage('pl')">PL</button>
     <button onclick="switchLanguage('en')">EN</button>
     <div id="pl" style="display: none;">
-        <section style="position: absolute; top: 0; right: 0;">
-            <h2>Logowanie</h2>
-            <form action="/login" method="post">
-                <label for="username">Nazwa użytkownika:</label><br>
-                <input type="text" id="username" name="username"><br>
-                <label for="password">Hasło:</label><br>
-                <input type="password" id="password" name="password"><br>
-                <input type="submit" value="Zaloguj się">
-            </form>
-        </section>
         <header>
             <h1>O mnie</h1>
         </header>
@@ -56,16 +46,6 @@
 
     </div>
     <div id="en" style="display: none;">
-        <section style="position: absolute; top: 0; right: 0;">
-            <h2>Login</h2>
-            <form action="/login" method="post">
-                <label for="username">Username:</label><br>
-                <input type="text" id="username" name="username"><br>
-                <label for="password">Password:</label><br>
-                <input type="password" id="password" name="password"><br>
-                <input type="submit" value="Log in">
-            </form>
-        </section>
         <header>
             <h1>About me</h1>
         </header>
@@ -84,6 +64,5 @@
         <!-- Reszta zawartości strony w języku angielskim -->
     </div>
     <script src="js/main.js"></script>
-    <script src="logowanie.js"></script>
 </body>
 </html>
