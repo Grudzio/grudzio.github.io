@@ -1,30 +1,36 @@
-#Jan Grudzinski's website
-<html>
-<head>
-    <title>Jan Grudzinski's website</title>
-</head>
-<body>
-    <header>
-        <h1>About</h1>
-    </header>
-    
-    <section>
-        <h2>About Me</h2>
-        <p>I am a telecommunications engineer with a passion for cybersecurity. I have been working in the telecommunications industry for over 5 years</p>
-    </section>
-    
-    <section>
-        <h2>Education</h2>
-        <p>I graduated with a degree in engineering, majoring in Telecommunications, from Warsaw University of Technology in 2019</p>
-    </section>
-    
-    <section>
-        <h2>Social Media</h2>
-        <p><script src="https://tryhackme.com/badge/2315388"></script></p>
-    </section>
-    
-    <footer>
-        <p>© 2022 My Website. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+# Jan Grudziński – Strona osobista
+
+Witamy na mojej stronie osobistej hostowanej na GitHub Pages!
+
+## Demo
+
+👉 [Zobacz stronę na żywo](https://grudzio.github.io)
+
+## O mnie
+
+Jestem inżynierem telekomunikacji z pasją do cyberbezpieczeństwa. Pracuję w branży telekomunikacyjnej od ponad 5 lat. Ukończyłem Politechnikę Warszawską na kierunku Telekomunikacja w 2019 roku.
+
+## Technologie
+
+- HTML
+- CSS
+- JavaScript
+- Webpack
+- GitHub Pages
+
+## Jak uruchomić lokalnie
+
+1. Sklonuj repozytorium:
+   ```sh
+   git clone https://github.com/Grudzio/grudzio.github.io.git
+   ```
+2. Otwórz plik `index.html` w przeglądarce.
+
+## Kontakt
+
+- LinkedIn: [Jan Grudziński](https://www.linkedin.com/in/jan-grudzinski)
+- TryHackMe: ![TryHackMe badge](https://tryhackme-badges.s3.amazonaws.com/2315388.png)
+
+---
+
+© 2022–2025 Jan Grudziński. Wszelkie prawa zastrzeżone.
