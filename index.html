@@ -122,6 +122,29 @@
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15) !important;
         }
         
+        /* Style dla footer social media */
+        .footer-social {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .footer-social:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+            color: white !important;
+        }
+        
+        @media (max-width: 768px) {
+            .footer-social {
+                margin-bottom: 10px;
+                display: block;
+            }
+        }
+        
         img.profile {
             display: block;
             margin: 0 auto;
@@ -180,37 +203,9 @@
     </header>
     <div id="pl" style="display: none;">
         <div class="container my-4">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-md-4 text-center">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
                     <img src="profile.jpg" alt="Zdjęcie profilowe" class="img-fluid rounded-circle" style="max-width: 250px;">
-                </div>
-                <div class="col-md-6">
-                    <div class="d-flex justify-content-start gap-3 flex-wrap">
-                        <a href="https://www.linkedin.com/in/jan-grudzinski/" target="_blank" class="text-decoration-none">
-                            <div class="card border-0 shadow-sm social-card">
-                                <div class="card-body text-center p-3">
-                                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="img-fluid mb-2" style="width: 40px; height: 40px;">
-                                    <h6 class="card-title text-primary mb-0">LinkedIn</h6>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://github.com/grudzio" target="_blank" class="text-decoration-none">
-                            <div class="card border-0 shadow-sm social-card">
-                                <div class="card-body text-center p-3">
-                                    <img src="https://github.githubassets.com/favicons/favicon.png" alt="GitHub" class="img-fluid mb-2" style="width: 40px; height: 40px;">
-                                    <h6 class="card-title text-dark mb-0">GitHub</h6>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://tryhackme.com/p/grudek" target="_blank" class="text-decoration-none">
-                            <div class="card border-0 shadow-sm social-card">
-                                <div class="card-body text-center p-3">
-                                    <img src="https://tryhackme.com/img/favicon.png" alt="TryHackMe" class="img-fluid mb-2" style="width: 40px; height: 40px;">
-                                    <h6 class="card-title text-success mb-0">TryHackMe</h6>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -273,37 +268,9 @@
     </div>
     <div id="en" style="display: none;">
         <div class="container my-4">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-md-4 text-center">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
                     <img src="profile.jpg" alt="Profile picture" class="img-fluid rounded-circle" style="max-width: 250px;">
-                </div>
-                <div class="col-md-6">
-                    <div class="d-flex justify-content-start gap-3 flex-wrap">
-                        <a href="https://www.linkedin.com/in/jan-grudzinski/" target="_blank" class="text-decoration-none">
-                            <div class="card border-0 shadow-sm social-card">
-                                <div class="card-body text-center p-3">
-                                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="img-fluid mb-2" style="width: 40px; height: 40px;">
-                                    <h6 class="card-title text-primary mb-0">LinkedIn</h6>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://github.com/grudzio" target="_blank" class="text-decoration-none">
-                            <div class="card border-0 shadow-sm social-card">
-                                <div class="card-body text-center p-3">
-                                    <img src="https://github.githubassets.com/favicons/favicon.png" alt="GitHub" class="img-fluid mb-2" style="width: 40px; height: 40px;">
-                                    <h6 class="card-title text-dark mb-0">GitHub</h6>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://tryhackme.com/p/grudek" target="_blank" class="text-decoration-none">
-                            <div class="card border-0 shadow-sm social-card">
-                                <div class="card-body text-center p-3">
-                                    <img src="https://tryhackme.com/img/favicon.png" alt="TryHackMe" class="img-fluid mb-2" style="width: 40px; height: 40px;">
-                                    <h6 class="card-title text-success mb-0">TryHackMe</h6>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -365,9 +332,37 @@
         </div>
     </div>
     
-    <!-- Wspólna stopka na samym dole -->
-    <footer class="bg-primary text-white text-center py-3 mt-5">
-        <p class="mb-0">© 2025 All rights reserved.</p>
+    <!-- Wspólna stopka z Social Media -->
+    <footer class="bg-primary text-white py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Social Media w 3 kolumnach -->
+                <div class="col-md-4 text-center">
+                    <a href="https://www.linkedin.com/in/jan-grudzinski/" target="_blank" class="text-white text-decoration-none footer-social">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="img-fluid me-2" style="width: 30px; height: 30px; filter: brightness(0) invert(1);">
+                        LinkedIn
+                    </a>
+                </div>
+                <div class="col-md-4 text-center">
+                    <a href="https://github.com/grudzio" target="_blank" class="text-white text-decoration-none footer-social">
+                        <img src="https://github.githubassets.com/favicons/favicon.png" alt="GitHub" class="img-fluid me-2" style="width: 30px; height: 30px; filter: brightness(0) invert(1);">
+                        GitHub
+                    </a>
+                </div>
+                <div class="col-md-4 text-center">
+                    <a href="https://tryhackme.com/p/grudek" target="_blank" class="text-white text-decoration-none footer-social">
+                        <img src="https://tryhackme.com/img/favicon.png" alt="TryHackMe" class="img-fluid me-2" style="width: 30px; height: 30px; filter: brightness(0) invert(1);">
+                        TryHackMe
+                    </a>
+                </div>
+            </div>
+            <hr class="my-3" style="border-color: rgba(255,255,255,0.3);">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">© 2025 All rights reserved.</p>
+                </div>
+            </div>
+        </div>
     </footer>
     
     <script src="js/main.js"></script>
