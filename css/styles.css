@@ -1,18 +1,18 @@
 /* styles.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Style dla jasnego motywu */
 body {
-    background-color: white;
-    color: black;
+    background-color: #f8f9fa; /* Bootstrap default light background */
+    color: #212529; /* Bootstrap default text color */
 }
 
 header {
     text-align: center;
     padding: 20px;
-    background-color: #0078d7;
+    background-color: #0078d7; /* Custom primary color */
     color: white;
 }
 
@@ -26,9 +26,21 @@ header {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
+.list-group-item {
+    border: none; /* Remove borders for cleaner look */
+    padding: 10px 15px; /* Adjust padding */
+}
+
+footer {
+    background-color: #0078d7; /* Custom primary color */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: black;
-        color: white;
+        background-color: #212529; /* Bootstrap default dark background */
+        color: #f8f9fa; /* Bootstrap default light text color */
     }
 }
