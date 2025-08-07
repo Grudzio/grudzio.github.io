@@ -45,6 +45,50 @@
             background-color: #0078d7;
             color: white;
         }
+        
+        /* Nowoczesne style dla przycisków języka */
+        .language-btn {
+            border: 2px solid rgba(255, 255, 255, 0.3) !important;
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.1) !important;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+        
+        .language-btn:hover {
+            background: rgba(255, 255, 255, 0.2) !important;
+            border-color: rgba(255, 255, 255, 0.6) !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        .language-btn.active {
+            background: rgba(255, 255, 255, 0.9) !important;
+            color: #0078d7 !important;
+            border-color: rgba(255, 255, 255, 0.9) !important;
+            font-weight: 600;
+        }
+        
+        .language-btn.active:hover {
+            background: white !important;
+            transform: translateY(-1px);
+        }
+        
+        .btn-group {
+            border-radius: 25px;
+            overflow: hidden;
+        }
+        
+        .btn-group .language-btn:first-child {
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+        }
+        
+        .btn-group .language-btn:last-child {
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
         img.profile {
             display: block;
             margin: 0 auto;
@@ -66,8 +110,24 @@
          * @param {string} lang - The language to switch to ('pl' for Polish, 'en' for English).
          */
         function switchLanguage(lang) {
+            // Przełączanie widoczności sekcji językowych
             document.getElementById('pl').style.display = lang === 'pl' ? 'block' : 'none';
             document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
+            
+            // Aktualizacja aktywnego stanu przycisków
+            const btnPl = document.getElementById('btn-pl');
+            const btnEn = document.getElementById('btn-en');
+            
+            // Usuwanie klasy active z obu przycisków
+            btnPl.classList.remove('active');
+            btnEn.classList.remove('active');
+            
+            // Dodawanie klasy active do wybranego przycisku
+            if (lang === 'pl') {
+                btnPl.classList.add('active');
+            } else {
+                btnEn.classList.add('active');
+            }
         }
     </script>
 </head>
@@ -75,12 +135,14 @@
     <header class="bg-primary text-white text-center py-4 position-relative">
         <h1>Jan Grudziński</h1>
         <div class="position-absolute top-0 end-0 p-3">
-            <button onclick="switchLanguage('pl')" class="btn btn-light btn-lg">
-                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/32px-Flag_of_Poland.svg.png" alt="Polska" class="me-2">PL
-            </button>
-            <button onclick="switchLanguage('en')" class="btn btn-light btn-lg">
-                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/32px-Flag_of_the_United_Kingdom.svg.png" alt="Angielski" class="me-2">EN
-            </button>
+            <div class="btn-group shadow-lg" role="group" aria-label="Language selector">
+                <button id="btn-pl" onclick="switchLanguage('pl')" class="btn btn-outline-light btn-sm px-3 py-2 language-btn">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/32px-Flag_of_Poland.svg.png" alt="Polska" class="me-2" style="width: 20px; height: auto;">PL
+                </button>
+                <button id="btn-en" onclick="switchLanguage('en')" class="btn btn-outline-light btn-sm px-3 py-2 language-btn active">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/32px-Flag_of_the_United_Kingdom.svg.png" alt="English" class="me-2" style="width: 20px; height: auto;">EN
+                </button>
+            </div>
         </div>
     </header>
     <div id="pl" style="display: none;">
