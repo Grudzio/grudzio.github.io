@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Jan Grudzinski's website</title>
+    <title>Jan Grudzinski&#39;s website</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUa12Zc5wD3aJPvV2qVf2Jd1xv7x5o8V8J5o9T8y8jZ3x8eC1d7Y2P8H9U3c" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
@@ -179,7 +179,7 @@
         }
     </script>
 </head>
-<body onload="switchLanguage('en')">
+<body>
     <header class="bg-primary text-white text-center py-4 position-relative">
         <h1>Jan Grudziński</h1>
         <div class="position-absolute top-0 end-0 p-3">
@@ -197,7 +197,7 @@
         <div class="container my-4">
             <div class="row justify-content-center">
                 <div class="col-md-6 text-center">
-                    <img src="profile.jpg" alt="Zdjęcie profilowe" class="img-fluid rounded-circle" style="max-width: 250px;">
+                    <img src="profile.jpg" alt="Zdjęcie profilowe" class="img-fluid rounded-circle" style="max-width: 250px;" loading="lazy">
                 </div>
             </div>
         </div>
@@ -262,7 +262,7 @@
         <div class="container my-4">
             <div class="row justify-content-center">
                 <div class="col-md-6 text-center">
-                    <img src="profile.jpg" alt="Profile picture" class="img-fluid rounded-circle" style="max-width: 250px;">
+                    <img src="profile.jpg" alt="Profile picture" class="img-fluid rounded-circle" style="max-width: 250px;" loading="lazy">
                 </div>
             </div>
         </div>
@@ -330,29 +330,40 @@
             <!-- Social Media w poziomie -->
             <div class="d-flex justify-content-center mb-3">
                 <a href="https://www.linkedin.com/in/jan-grudzinski/" target="_blank" class="text-white text-decoration-none footer-social mx-2">
-                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="img-fluid me-2" style="width: 30px; height: 30px; filter: brightness(0) invert(1);">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="img-fluid me-2" style="width: 30px; height: 30px; filter: brightness(0) invert(1);" loading="lazy">
                     LinkedIn
                 </a>
                 <a href="https://github.com/grudzio" target="_blank" class="text-white text-decoration-none footer-social mx-2">
-                    <img src="https://github.githubassets.com/favicons/favicon.png" alt="GitHub" class="img-fluid me-2" style="width: 30px; height: 30px; filter: brightness(0) invert(1);">
+                    <img src="https://github.githubassets.com/favicons/favicon.png" alt="GitHub" class="img-fluid me-2" style="width: 30px; height: 30px; filter: brightness(0) invert(1);" loading="lazy">
                     GitHub
                 </a>
                 <a href="https://tryhackme.com/p/grudek" target="_blank" class="text-white text-decoration-none footer-social mx-2">
-                    <img src="https://tryhackme.com/img/favicon.png" alt="TryHackMe" class="img-fluid me-2" style="width: 30px; height: 30px; filter: brightness(0) invert(1);">
+                    <img src="https://tryhackme.com/img/favicon.png" alt="TryHackMe" class="img-fluid me-2" style="width: 30px; height: 30px; filter: brightness(0) invert(1);" loading="lazy">
                     TryHackMe
                 </a>
             </div>
             <hr class="my-3" style="border-color: rgba(255,255,255,0.3);">
             <div class="row">
                 <div class="col-12 text-center">
-                    <p class="mb-0">© 2025 All rights reserved.</p>
+                    <p class="mb-0">© <span id="footer-year"></span> All rights reserved.</p>
                 </div>
             </div>
         </div>
     </footer>
     
-    <script src="js/main.js"></script>
+    <script src="js/main.js" onerror="console.warn('Warning: js/main.js failed to load.');"></script>
     <!-- Bootstrap JS Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoA6DQD1Cj6k1rj6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-QNV5A3XvZlSR1L+K4U+u5QvQ1Q1Q1Q1Q1Q1Q1Q1Q1Q1Q1Q1Q1Q1Q1Q1Q1Q1Q1Q" crossorigin="anonymous"></script>
+    <script>
+        // Initialize language after DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            switchLanguage('en');
+            // Set current year in footer
+            var yearSpan = document.getElementById('footer-year');
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
 </body>
 </html>
