@@ -21,7 +21,7 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            margin: 0;
+            margin: 0 20px; /* Zwiększenie marginesów bocznych */
             padding: 0;
             background-color: #f4f4f9;
             color: #333;
@@ -72,16 +72,22 @@
     </script>
 </head>
 <body onload="switchLanguage('en')">
-    <header class="bg-primary text-white text-center py-4">
+    <header class="bg-primary text-white text-center py-4 position-relative">
         <h1>Jan Grudziński</h1>
+        <div class="position-absolute top-0 end-0 p-3">
+            <button onclick="switchLanguage('pl')" class="btn btn-light btn-lg">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/32px-Flag_of_Poland.svg.png" alt="Polska" class="me-2">PL
+            </button>
+            <button onclick="switchLanguage('en')" class="btn btn-light btn-lg">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/32px-Flag_of_the_United_Kingdom.svg.png" alt="Angielski" class="me-2">EN
+            </button>
+        </div>
     </header>
-    <button onclick="switchLanguage('pl')">PL</button>
-    <button onclick="switchLanguage('en')">EN</button>
     <div id="pl" style="display: none;">
-        <header>
+        <img src="profile.jpg" alt="Zdjęcie profilowe" class="profile">
+        <header class="text-center my-4">
             <h1>O mnie</h1>
         </header>
-        <img src="profile.jpg" alt="Zdjęcie profilowe" class="profile">
         <div class="container my-5">
             <section>
                 <h2 class="text-center">Podsumowanie zawodowe</h2>
@@ -140,10 +146,10 @@
         </footer>
     </div>
     <div id="en" style="display: none;">
-        <header>
+        <img src="profile.jpg" alt="Profile picture" class="profile">
+        <header class="text-center my-4">
             <h1>About Me</h1>
         </header>
-        <img src="profile.jpg" alt="Profile picture" class="profile">
         <div class="container my-5">
             <section>
                 <h2 class="text-center">Professional Summary</h2>
