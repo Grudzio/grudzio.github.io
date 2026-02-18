@@ -421,6 +421,40 @@ section {
     margin-right: 10px;
 }
 
+/* Projects */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.project-links {
+    margin-top: 1.5rem;
+}
+
+.edu-desc {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #bbb;
+    line-height: 1.6;
+}
+
 /* Contact */
 .contact-wrapper {
     display: grid;
