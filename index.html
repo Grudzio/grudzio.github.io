@@ -1,369 +1,315 @@
-<html>
-<head>
-    <title>Jan Grudzinski&#39;s website</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUa12Zc5wD3aJPvV2qVf2Jd1xv7x5o8V8J5o9T8y8jZ3x8eC1d7Y2P8H9U3c" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <meta name="description" content="Jan Grudziński - Inżynier telekomunikacji z pasją do cyberbezpieczeństwa.">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TD8GXRNM5G"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<!DOCTYPE html>
+<html lang="pl">
 
-      gtag('config', 'G-TD8GXRNM5G');
-    </script>
-    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="a50368d7-3995-4d82-b7da-af2dc8a2e70a" type="text/javascript" async></script>
-    <meta name="keywords" content="telekomunikacja, cyberbezpieczeństwo, inżynier, wizytówka">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0 20px; /* Zwiększenie marginesów bocznych */
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: #0078d7;
-            color: white;
-        }
-        section {
-            margin: 20px;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #0078d7;
-            color: white;
-        }
-        
-        /* Nowoczesne style dla przycisków języka */
-        .language-btn {
-            border: 2px solid rgba(255, 255, 255, 0.3) !important;
-            backdrop-filter: blur(10px);
-            background: rgba(255, 255, 255, 0.1) !important;
-            transition: all 0.3s ease;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-        }
-        
-        .language-btn:hover {
-            background: rgba(255, 255, 255, 0.2) !important;
-            border-color: rgba(255, 255, 255, 0.6) !important;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        }
-        
-        .language-btn.active {
-            background: rgba(255, 255, 255, 0.9) !important;
-            color: #0078d7 !important;
-            border-color: rgba(255, 255, 255, 0.9) !important;
-            font-weight: 600;
-        }
-        
-        .language-btn.active:hover {
-            background: white !important;
-            transform: translateY(-1px);
-        }
-        
-        .btn-group {
-            border-radius: 25px;
-            overflow: hidden;
-        }
-        
-        .btn-group .language-btn:first-child {
-            border-top-left-radius: 25px;
-            border-bottom-left-radius: 25px;
-        }
-        
-        .btn-group .language-btn:last-child {
-            border-top-right-radius: 25px;
-            border-bottom-right-radius: 25px;
-        }
-        
-        /* Style dla sekcji Social Media */
-        .card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
-        }
-        
-        .card a {
-            color: inherit;
-        }
-        
-        .card a:hover {
-            text-decoration: none !important;
-        }
-        
-        /* Style dla mniejszych social cards */
-        .social-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            width: 100px;
-        }
-        
-        .social-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15) !important;
-        }
-        
-        /* Style dla footer social media */
-        .footer-social {
-            display: inline-flex;
-            align-items: center;
-            padding: 10px 15px;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            font-weight: 500;
-        }
-        
-        .footer-social:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-            transform: translateY(-2px);
-            color: white !important;
-        }
-        
-        @media (max-width: 768px) {
-            .footer-social {
-                margin-bottom: 10px;
-                display: block;
-            }
-        }
-        
-        img.profile {
-            display: block;
-            margin: 0 auto;
-            width: auto;
-            height: auto;
-            max-width: 300px;
-            border-radius: 0;
-        }
-        @media (max-width: 768px) {
-            section {
-                margin: 10px;
-                padding: 10px;
-            }
-        }
-    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jan Grudziński - IT Specialist & Telecommunications Engineer. Portfolio.">
+    <title>Jan Grudziński | IT Specialist & Telecom Engineer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Cookie Consent & Analytics Placeholder -->
     <script>
-        function switchLanguage(lang) {
-            // Przełączanie widoczności sekcji językowych
-            document.getElementById('pl').style.display = lang === 'pl' ? 'block' : 'none';
-            document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
-            
-            // Aktualizacja aktywnego stanu przycisków
-            const btnPl = document.getElementById('btn-pl');
-            const btnEn = document.getElementById('btn-en');
-            
-            // Usuwanie klasy active z obu przycisków
-            btnPl.classList.remove('active');
-            btnEn.classList.remove('active');
-            
-            // Dodawanie klasy active do wybranego przycisku
-            if (lang === 'pl') {
-                btnPl.classList.add('active');
-            } else {
-                btnEn.classList.add('active');
-            }
-        }
+        // Define dataLayer and the gtag function.
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+
+        // Set default consent to 'denied' as a placeholder
+        // Determine actual status from localStorage later
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied'
+        });
     </script>
+
+    <!-- Google Tag Manager (To be replaced with actual ID) -->
+    <!-- End Google Tag Manager -->
 </head>
+
 <body>
-    <header class="bg-primary text-white text-center py-4 position-relative">
-        <h1>Jan Grudziński</h1>
-        <div class="position-absolute top-0 end-0 p-3">
-            <div class="btn-group shadow-lg" role="group" aria-label="Language selector">
-                <button id="btn-pl" onclick="switchLanguage('pl')" class="btn btn-outline-light btn-sm px-3 py-2 language-btn">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/32px-Flag_of_Poland.svg.png" alt="Polska" class="me-2" style="width: 20px; height: auto;">PL
-                </button>
-                <button id="btn-en" onclick="switchLanguage('en')" class="btn btn-outline-light btn-sm px-3 py-2 language-btn active">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/32px-Flag_of_the_United_Kingdom.svg.png" alt="English" class="me-2" style="width: 20px; height: auto;">EN
-                </button>
-            </div>
-        </div>
-    </header>
-    <div id="pl" style="display: none;">
-        <div class="container my-4">
-            <div class="row justify-content-center">
-                <div class="col-md-6 text-center">
-                    <img src="profile.jpg" alt="Zdjęcie profilowe" class="img-fluid rounded-circle" style="max-width: 250px;" loading="lazy">
-                </div>
-            </div>
-        </div>
-        <header class="text-center my-4">
-            <h1>O mnie</h1>
-        </header>
-        <div class="container my-5">
-            <section>
-                <h2 class="text-center">Podsumowanie zawodowe</h2>
-                <p class="text-center">Inżynier z ponad 5-letnim doświadczeniem w utrzymaniu i zarządzaniu infrastrukturą IT. Specjalizuję się w monitorowaniu systemów, rozwiązywaniu problemów technicznych oraz zapewnianiu bezpieczeństwa sieciowego. Posiadam praktyczne doświadczenie w pracy z bazami danych (SQL) i wsparciu technicznym użytkowników. Ukończyłem liczne kursy z zakresu cyberbezpieczeństwa (m.in. SOC Fundamentals, Ethical Hacking). Poszukuję stanowiska, na którym będę mógł w pełni wykorzystać swoje umiejętności do wspierania zespołu i dalszego rozwoju w obszarze administracji IT.</p>
-            </section>
-            <section>
-                <h2 class="text-center">Doświadczenie zawodowe</h2>
-                <div class="row">
-                    <div class="col-md-4">
-                        <strong>11.2022 – 07.2024 | Specjalista ds. nadzoru sieci | <a href="https://www.cellnex.com/pl-pl/about-cellnex/" target="_blank">Towerlink Poland, część Cellnex Group</a> | Warszawa</strong>
-                        <p>Monitorowanie infrastruktury IT i zapewnienie ciągłości działania kluczowych systemów. Diagnozowanie i zdalne rozwiązywanie problemów technicznych oraz koordynacja pracy ekip terenowych. Kontrola i nadzór nad planowanymi pracami wdrożeniowymi i modernizacyjnymi na elementach sieci. Współpraca z klientami w celu zapewnienia wysokiej jakości wsparcia technicznego.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <strong>10.2019 – 06.2022 | Junior Vendor Management Specialist | <a href="https://www.ericsson.com/pl/about-us/company-facts/ericsson-worldwide/poland" target="_blank">Ericsson</a> | Warszawa</strong>
-                        <p>Zapewnianie wsparcia technicznego podwykonawcom przy obsłudze wewnętrznych narzędzi i systemów. Wdrażanie nowych narzędzi i oprogramowania oraz tworzenie materiałów szkoleniowych dla użytkowników. Przygotowywanie zapytań SQL (MS Access) w celu analizy i raportowania danych sprzętowych. Zarządzanie kontami i uprawnieniami dostępu dla pracowników i podwykonawców.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <strong>08.2018 – 04.2019 | Młodszy specjalista ds. analizy sieci | Open Investments | Warszawa</strong>
-                        <p>Realizacja pomiarów i wstępna analiza poprawności działania sieci komórkowej (<a href="https://www.linkedin.com/company/p4/" target="_blank">P4 Sp. z o.o.</a>). Obsługa specjalistycznego oprogramowania do analizy danych (TEMS™ Investigation).</p>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <h2 class="text-center">Umiejętności</h2>
-                <ul class="list-group">
-                    <li class="list-group-item">Zarządzanie i Bezpieczeństwo IT: troubleshooting, administracja systemami (Linux, Windows), wsparcie techniczne, analiza ryzyka w cyberbezpieczeństwie.</li>
-                    <li class="list-group-item">Bazy Danych i Programowanie: SQL (MS Access), Java, Python, Visual Studio Code.</li>
-                    <li class="list-group-item">Sieci: konfiguracja i diagnostyka sieci, podstawy bezpieczeństwa sieciowego.</li>
-                    <li class="list-group-item">Narzędzia: Microsoft Office, Visual Studio Code.</li>
-                    <li class="list-group-item">Języki: angielski – B2 (średnio zaawansowany), polski – ojczysty.</li>
-                </ul>
-            </section>
-            <section>
-                <h2 class="text-center">Wykształcenie</h2>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <strong>10.2015 – 10.2019 | Politechnika Warszawska</strong><br>
-                        Kierunek: Telekomunikacja | Specjalizacja: Radiokomunikacja i Techniki Multimedialne | Tytuł: Inżynier<br>
-                        Praca dyplomowa: Projekt i implementacja aplikacji mobilnej (Java, Android) do monitorowania poziomu hałasu zgodnie z normami BHP.
-                    </li>
-                </ul>
-            </section>
-            <section>
-                <h2 class="text-center">Szkolenia i certyfikaty</h2>
-                <ul class="list-group">
-                    <li class="list-group-item">08.2024 | SOC Fundamentals | LetsDefend</li>
-                    <li class="list-group-item">01.2024 | Network Fundamentals | TryHackMe</li>
-                    <li class="list-group-item">09.2023 | Introduction to Kali Linux and Windows Subsystem for Linux | LinkedIn Learning</li>
-                    <li class="list-group-item">11.2022 | Ethical Hacking: Introduction to Ethical Hacking | LinkedIn Learning</li>
-                    <li class="list-group-item">09.2022 | Introduction to Cybersecurity | Cisco</li>
-                </ul>
-            </section>
-        </div>
-    </div>
-    <div id="en" style="display: none;">
-        <div class="container my-4">
-            <div class="row justify-content-center">
-                <div class="col-md-6 text-center">
-                    <img src="profile.jpg" alt="Profile picture" class="img-fluid rounded-circle" style="max-width: 250px;" loading="lazy">
-                </div>
-            </div>
-        </div>
-        <header class="text-center my-4">
-            <h1>About Me</h1>
-        </header>
-        <div class="container my-5">
-            <section>
-                <h2 class="text-center">Professional Summary</h2>
-                <p class="text-center">Engineer with over 5 years of experience in IT infrastructure maintenance and management. Specialized in system monitoring, troubleshooting, and network security. Practical experience with databases (SQL) and technical user support. Completed numerous cybersecurity courses (including SOC Fundamentals, Ethical Hacking). Looking for a position to fully utilize my skills to support the team and further develop in IT administration.</p>
-            </section>
-            <section>
-                <h2 class="text-center">Work Experience</h2>
-                <div class="row">
-                    <div class="col-md-4">
-                        <strong>11.2022 – 07.2024 | Network Supervision Specialist | <a href="https://www.cellnex.com/pl-pl/about-cellnex/" target="_blank">Towerlink Poland, part of Cellnex Group</a> | Warsaw</strong>
-                        <p>Monitoring IT infrastructure and ensuring continuity of key systems. Diagnosing and remotely solving technical problems, coordinating field teams. Controlling and supervising planned implementation and modernization works on network elements. Cooperation with clients to provide high-quality technical support.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <strong>10.2019 – 06.2022 | Junior Vendor Management Specialist | <a href="https://www.ericsson.com/pl/about-us/company-facts/ericsson-worldwide/poland" target="_blank">Ericsson</a> | Warsaw</strong>
-                        <p>Providing technical support to subcontractors for internal tools and systems. Implementing new tools and software, creating training materials for users. Preparing SQL queries (MS Access) for hardware data analysis and reporting. Managing accounts and access permissions for employees and subcontractors.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <strong>08.2018 – 04.2019 | Junior Network Analysis Specialist | Open Investments | Warsaw</strong>
-                        <p>Conducting measurements and preliminary analysis of mobile network performance (<a href="https://www.linkedin.com/company/p4/" target="_blank">P4 Sp. z o.o.</a>). Operating specialized data analysis software (TEMS™ Investigation).</p>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <h2 class="text-center">Skills</h2>
-                <ul class="list-group">
-                    <li class="list-group-item">IT Management & Security: troubleshooting, system administration (Linux, Windows), technical support, cybersecurity risk analysis.</li>
-                    <li class="list-group-item">Databases & Programming: SQL (MS Access), Java, Python, Visual Studio Code.</li>
-                    <li class="list-group-item">Networks: configuration and diagnostics, basics of network security.</li>
-                    <li class="list-group-item">Tools: Microsoft Office, Visual Studio Code.</li>
-                    <li class="list-group-item">Languages: English – B2 (upper intermediate), Polish – native.</li>
-                </ul>
-            </section>
-            <section>
-                <h2 class="text-center">Education</h2>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <strong>10.2015 – 10.2019 | Warsaw University of Technology</strong><br>
-                        Major: Telecommunications | Specialization: Radiocommunication and Multimedia Techniques | Degree: Engineer<br>
-                        Thesis: Design and implementation of a mobile application (Java, Android) for noise level monitoring according to OHS standards.
-                    </li>
-                </ul>
-            </section>
-            <section>
-                <h2 class="text-center">Trainings & Certificates</h2>
-                <ul class="list-group">
-                    <li class="list-group-item">08.2024 | SOC Fundamentals | LetsDefend</li>
-                    <li class="list-group-item">01.2024 | Network Fundamentals | TryHackMe</li>
-                    <li class="list-group-item">09.2023 | Introduction to Kali Linux and Windows Subsystem for Linux | LinkedIn Learning</li>
-                    <li class="list-group-item">11.2022 | Ethical Hacking: Introduction to Ethical Hacking | LinkedIn Learning</li>
-                    <li class="list-group-item">09.2022 | Introduction to Cybersecurity | Cisco</li>
-                </ul>
-            </section>
-        </div>
-    </div>
-    
-    <!-- Wspólna stopka z Social Media -->
-    <footer class="bg-primary text-white py-4 mt-5">
+
+    <!-- Navigation -->
+    <nav class="navbar">
         <div class="container">
-            <!-- Social Media w poziomie -->
-            <div class="d-flex justify-content-center mb-3">
-                <a href="https://www.linkedin.com/in/jan-grudzinski/" target="_blank" class="text-white text-decoration-none footer-social mx-2">
-                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt=" LinkedIn" class="img-fluid me-2" style="width: 30px; height: 30px; filter: brightness(0) invert(1);" loading="lazy">
-                    LinkedIn
-                </a>
-                <a href="https://github.com/grudzio" target="_blank" class="text-white text-decoration-none footer-social mx-2">
-                    <img src="https://github.githubassets.com/favicons/favicon.png" alt=" GitHub" class="img-fluid me-2" style="width: 30px; height: 30px; filter: brightness(0) invert(1);" loading="lazy">
-                    GitHub
-                </a>
-                <a href="https://tryhackme.com/p/grudek" target="_blank" class="text-white text-decoration-none footer-social mx-2">
-                    <img src="https://tryhackme.com/img/favicon.png" alt=" TryHackMe" class="img-fluid me-2" style="width: 30px; height: 30px; filter: brightness(0) invert(1);" loading="lazy">
-                    TryHackMe
-                </a>
+            <a href="#" class="logo">JG.</a>
+            <ul class="nav-links">
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#experience">Doświadczenie</a></li>
+                <li><a href="#skills">Umiejętności</a></li>
+                <li><a href="#education">Edukacja</a></li>
+                <li><a href="#contact" class="btn-primary">Kontakt</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <hr class="my-3" style="border-color: rgba(255,255,255,0.3);">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <p class="mb-0">© <span id="footer-year"></span> All rights reserved.</p>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text" data-aos="fade-up">
+                <p class="greeting">Cześć, jestem</p>
+                <h1>Jan Grudziński</h1>
+                <h2 class="dynamic-text">IT Specialist | Telecommunications Engineer</h2>
+                <p class="hero-description">
+                    Łączę świat telekomunikacji z nowoczesnymi technologiami webowymi i analizą danych.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn-primary">Skontaktuj się</a>
+                    <a href="#experience" class="btn-secondary">Moje doświadczenie</a>
                 </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <div class="image-wrapper">
+                    <img src="profile.jpg" alt="Jan Grudziński">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>O mnie</h2>
+                <div class="line"></div>
+            </div>
+            <div class="about-content" data-aos="fade-up" data-aos-delay="100">
+                <p>
+                    Jestem inżynierem telekomunikacji z doświadczeniem przechodzącym od utrzymania infrastruktury
+                    sieciowej po administrację projektami webowymi.
+                    Obecnie w firmie Clever Investment odpowiadam za technologiczną stronę obecności grupy w sieci, w
+                    tym projektowanie i administrację stronami WordPress, wsparcie e-commerce oraz analizę danych.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Doświadczenie</h2>
+                <div class="line"></div>
+            </div>
+            <div class="timeline">
+
+                <!-- Job 1 -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-date">Lip 2025 - Obecnie</div>
+                    <div class="timeline-content">
+                        <h3>Asystent IT</h3>
+                        <h4>Clever Investment</h4>
+                        <p>Wsparcie techniczne, projektowanie w WordPress, administracja stronami.</p>
+                        <span class="role-tag">E-commerce</span>
+                        <span class="role-tag">Analiza</span>
+                    </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-date">Lis 2022 - Lip 2024</div>
+                    <div class="timeline-content">
+                        <h3>Specjalista ds. nadzoru sieci</h3>
+                        <h4>Cellnex Poland</h4>
+                        <p>Całodobowy nadzór nad systemami telekomunikacyjnymi, koordynacja usuwania awarii, wsparcie
+                            ekip terenowych.</p>
+                    </div>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-date">Paź 2019 - Cze 2022</div>
+                    <div class="timeline-content">
+                        <h3>Junior Vendor Management Specialist</h3>
+                        <h4>Ericsson</h4>
+                        <p>Obsługa ticketów błędów, zarządzanie kontami podwykonawców, audyty jakości/BHP,
+                            przygotowywanie kwerend SQL.</p>
+                    </div>
+                </div>
+
+                <!-- Job 4 -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-date">Sie 2018 - Sie 2019</div>
+                    <div class="timeline-content">
+                        <h3>Młodszy specjalista ds. analizy sieci</h3>
+                        <h4>Open Investments</h4>
+                        <p>Pomiary zasięgu sieci P4 (Play) przy użyciu oprogramowania TEMS Investigation.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Umiejętności</h2>
+                <div class="line"></div>
+            </div>
+            <div class="skills-grid">
+
+                <!-- Cat 1 -->
+                <div class="skill-card" data-aos="flip-left">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h3>IT & Web</h3>
+                    <ul>
+                        <li>WordPress (Elementor, Oxygen)</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>E-commerce</li>
+                    </ul>
+                </div>
+
+                <!-- Cat 2 -->
+                <div class="skill-card" data-aos="flip-left" data-aos-delay="100">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>Data & Tools</h3>
+                    <ul>
+                        <li>SQL</li>
+                        <li>MS Excel</li>
+                        <li>Google Analytics</li>
+                        <li>Generative AI</li>
+                    </ul>
+                </div>
+
+                <!-- Cat 3 -->
+                <div class="skill-card" data-aos="flip-left" data-aos-delay="200">
+                    <i class="fa-solid fa-network-wired"></i>
+                    <h3>Telekomunikacja</h3>
+                    <ul>
+                        <li>Sieci komórkowe</li>
+                        <li>Nadzór systemów</li>
+                        <li>TEMS Investigation</li>
+                        <li>Cyberbezpieczeństwo</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Edukacja i Certyfikaty</h2>
+                <div class="line"></div>
+            </div>
+            <div class="education-grid">
+                <div class="edu-card" data-aos="fade-right">
+                    <h3>Politechnika Warszawska</h3>
+                    <p class="edu-degree">Magister inżynier (w trakcie)</p>
+                    <p class="edu-year">2025 - 2026</p>
+                </div>
+                <div class="edu-card" data-aos="fade-right" data-aos-delay="100">
+                    <h3>Politechnika Warszawska</h3>
+                    <p class="edu-degree">Inżynier Telekomunikacji</p>
+                    <p class="edu-year">2015 - 2019</p>
+                </div>
+            </div>
+
+            <div class="certs-list" data-aos="fade-up">
+                <h3>Certyfikaty</h3>
+                <ul>
+                    <li><i class="fa-solid fa-certificate"></i> Network Fundamentals – TryHackMe (Sty 2024)</li>
+                    <li><i class="fa-solid fa-certificate"></i> Cyber Kill Chain – LetsDefend (Sie 2024)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Kontakt</h2>
+                <div class="line"></div>
+            </div>
+            <div class="contact-wrapper">
+
+                <!-- Contact Form -->
+                <div class="contact-form-container" data-aos="fade-right">
+                    <form id="contact-form" action="https://formspree.io/f/mnjbzoyy" method="POST">
+                        <div class="form-group">
+                            <label for="name">Imię</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Wiadomość</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Wyślij wiadomość</button>
+                    </form>
+                </div>
+
+                <!-- Social Links -->
+                <div class="contact-info" data-aos="fade-left">
+                    <h3>Znajdź mnie w sieci</h3>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/jan-grudzinski/" target="_blank"
+                            class="social-btn linkedin">
+                            <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/Grudzio" target="_blank" class="social-btn github">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="https://tryhackme.com/p/grudek" target="_blank" class="social-btn tryhackme"
+                            style="border: 1px solid #fff;">
+                            <i class="fa-solid fa-user-secret"></i> TryHackMe
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Jan Grudziński. Wszelkie prawa zastrzeżone.</p>
+            <div class="footer-links">
+                <a href="privacy.html" id="open-privacy">Polityka Prywatności</a>
             </div>
         </div>
     </footer>
-    
-    <script src="js/main.js" onerror="console.warn('Warning: js/main.js failed to load.');"></script>
-    <!-- Bootstrap JS Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-QNV5A3XvZlSR1L+K4U+u5QvQ1Q1Q1Q1Q1Q1Q1Q1Q1Q1Q1Q1Q1Q1Q1Q1Q1Q1Q1Q" crossorigin="anonymous"></script>
-    <script>
-        // Initialize language after DOM is loaded
-        document.addEventListener('DOMContentLoaded', function() {
-            switchLanguage('en');
-            // Set current year in footer
-            var yearSpan = document.getElementById('footer-year');
-            if (yearSpan) {
-                yearSpan.textContent = new Date().getFullYear();
-            }
-        });
-    </script>
+
+    <!-- Cookie Banner (Hidden by default, shown by JS) -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <p>Ta strona używa plików cookies w celach analitycznych (Google Analytics). Czy wyrażasz zgodę na ich
+                użycie?</p>
+            <div class="cookie-buttons">
+                <button id="accept-cookies" class="btn-primary btn-sm">Zgadzam się</button>
+                <button id="decline-cookies" class="btn-secondary btn-sm">Odrzucam</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
