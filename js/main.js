@@ -55,11 +55,11 @@ document.addEventListener('DOMContentLoaded', () => {
         cookieBanner.style.display = 'none';
     });
 
-    // Privacy Policy Mock
-    privacyLink.addEventListener('click', (e) => {
-        e.preventDefault();
-        alert("Tu będzie treść Polityki Prywatności zgodnie z RODO (wyskakujące okno).");
-    });
+    // Privacy Policy Mock - REMOVED to allow simple navigation
+    // privacyLink.addEventListener('click', (e) => {
+    //     e.preventDefault();
+    //     alert("Tu będzie treść Polityki Prywatności zgodnie z RODO (wyskakujące okno).");
+    // });
 });
 
 function loadAnalytics() {
