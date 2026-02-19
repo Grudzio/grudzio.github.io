@@ -421,6 +421,33 @@ section {
     margin-right: 10px;
 }
 
+.tryhackme-badge-wrapper {
+    margin-top: 1rem;
+    display: block;
+}
+
+.tryhackme-badge {
+    border: none;
+    width: 100%;
+    max-width: 420px;
+    height: 130px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: block;
+}
+
+.cert-link {
+    color: var(--accent-color);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: var(--transition);
+}
+
+.cert-link:hover {
+    color: var(--primary-color);
+}
+
 /* Projects */
 .projects-grid {
     display: grid;
