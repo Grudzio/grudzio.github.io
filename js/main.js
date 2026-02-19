@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const privacyLink = document.getElementById('open-privacy');
 
     // Check localStorage
-    const consent = localStorage.getItem('cookieConcent');
+    const consent = localStorage.getItem('cookieConsent');
 
     if (!consent) {
         // Show banner if no choice made
@@ -44,14 +44,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Accept Action
     acceptBtn.addEventListener('click', () => {
-        localStorage.setItem('cookieConcent', 'granted');
+        localStorage.setItem('cookieConsent', 'granted');
         cookieBanner.style.display = 'none';
         loadAnalytics();
     });
 
     // Decline Action
     declineBtn.addEventListener('click', () => {
-        localStorage.setItem('cookieConcent', 'denied');
+        localStorage.setItem('cookieConsent', 'denied');
         cookieBanner.style.display = 'none';
     });
 
@@ -72,7 +72,6 @@ function loadAnalytics() {
         'analytics_storage': 'granted'
     });
 
-    // Load the GTM Script dynamically
     // Load the GTM Script dynamically
     const gaScript = document.createElement('script');
     gaScript.async = true;

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Polityka Prywatności | Jan Grudziński</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <!-- Fonts & CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -65,9 +67,8 @@
 
             <div class="privacy-content">
                 <h1>Polityka Prywatności</h1>
-                <p>Ostatnia aktualizacja:
-                    <script>document.write(new Date().toLocaleDateString());</script>
-                </p>
+                <span id="last-updated"></span>
+                <script>document.getElementById('last-updated').textContent = new Date().toLocaleDateString('pl-PL');</script>
 
                 <h2>1. Administrator Danych</h2>
                 <p>
