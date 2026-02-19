@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://grudzio.github.io/sitemap.xml

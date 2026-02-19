@@ -1,0 +1,38 @@
+# Jan Grudziński — IT Specialist & Telecom Engineer
+
+> Personal portfolio website of Jan Grudziński — a telecommunications engineer with experience in network supervision, web administration (WordPress), data analysis, and cybersecurity. Based in Poland.
+
+## Main Pages
+
+- [Home](https://grudzio.github.io/): Main page with biography, work experience, skills, education, projects, and contact form.
+- [Privacy Policy](https://grudzio.github.io/privacy.html): GDPR-compliant privacy policy and cookie information.
+
+## Professional Experience
+
+- IT Assistant at Clever Investment (Nov 2025 – Present): WordPress development (Elementor, Oxygen), website maintenance for mozaikamagazine.eu and cleverinvestment.pl.
+- Marketing Assistant at Clever Investment (Aug 2025 – Nov 2025): E-commerce data analysis, Google Analytics, Excel reporting.
+- Network Supervision Specialist at Cellnex Poland (Nov 2022 – Jul 2024): 24/7 telecom systems monitoring, fault coordination, field crew support.
+- Junior Vendor Management Specialist at Ericsson (Oct 2019 – Jun 2022): Ticket management, subcontractor accounts, quality/safety audits, SQL queries.
+- Junior Network Analyst at Open Investments (Aug 2018 – Aug 2019): P4 (Play) network coverage measurements using TEMS Investigation.
+
+## Education
+
+- Warsaw University of Technology — B.Eng. in Telecommunications (Oct 2015 – Oct 2019). Specialization: Radiocommunication and Multimedia Techniques. Thesis: Mobile app (Java, Android) for noise level monitoring per safety standards.
+
+## Certifications
+
+- [Network Fundamentals — TryHackMe (Jan 2024)](https://tryhackme.com/dashboard?badge=grudek:network-fundamentals)
+- [Cyber Kill Chain — LetsDefend (Aug 2024)](https://app.letsdefend.io/my-rewards/detail/1a0d6a6b-df46-412e-9a32-d8d13e91290f)
+
+## Skills
+
+- IT & Web: WordPress (Elementor, Oxygen), HTML5 & CSS3, E-commerce
+- Data & Tools: SQL, MS Excel, Google Analytics, Generative AI
+- Telecommunications: Mobile networks, System supervision, TEMS Investigation, Cybersecurity
+
+## Contact
+
+- [LinkedIn](https://www.linkedin.com/in/jan-grudzinski/)
+- [GitHub](https://github.com/Grudzio)
+- [TryHackMe](https://tryhackme.com/p/grudek)
+- Contact form available on the [homepage](https://grudzio.github.io/#contact)
