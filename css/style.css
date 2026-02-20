@@ -1,14 +1,14 @@
 :root {
-    --primary-color: #007bff;
+    --primary-color: #0d6efd;
     /* Vibrant Blue */
     --secondary-color: #6c757d;
     /* Grey */
     --dark-bg: #121212;
     --card-bg: #1e1e1e;
-    --text-color: #e0e0e0;
+    --text-color: #f1f1f1;
     --accent-color: #00d4ff;
     /* Cyan */
-    --hover-color: #0056b3;
+    --hover-color: #0b5ed7;
     --font-main: 'Inter', sans-serif;
     --transition: 0.3s ease;
 }
@@ -206,7 +206,7 @@ h2 {
 
 .hero-description {
     font-size: 1.1rem;
-    color: #ccc;
+    color: #e0e0e0;
     max-width: 500px;
     margin-bottom: 2rem;
 }
@@ -253,7 +253,7 @@ section {
     margin: 0 auto;
     text-align: center;
     font-size: 1.1rem;
-    color: #ccc;
+    color: #e0e0e0;
 }
 
 /* Experience (Timeline) */
@@ -322,7 +322,7 @@ section {
 
 .timeline-content h4 {
     font-size: 1rem;
-    color: #aaa;
+    color: #bbb;
     margin-bottom: 1rem;
     font-weight: 400;
 }
@@ -599,7 +599,7 @@ footer {
     background: #000;
     padding: 2rem 0;
     text-align: center;
-    color: #777;
+    color: #999;
     margin-top: 3rem;
 }
 
@@ -608,7 +608,7 @@ footer {
 }
 
 .footer-links a {
-    color: #777;
+    color: #999;
     font-size: 0.9rem;
     text-decoration: underline;
 }
