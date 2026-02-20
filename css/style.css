@@ -168,12 +168,12 @@ h2 {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 80px;
-    /* Navbar height */
+    padding-top: 120px;
+    padding-bottom: 60px;
     position: relative;
     background: radial-gradient(circle at top right, #1a2a40 0%, var(--dark-bg) 60%);
 }
