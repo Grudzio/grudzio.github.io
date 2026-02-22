@@ -1,0 +1,450 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+import CookieBanner from "../components/CookieBanner.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import ThmBadge from "../components/ThmBadge.astro";
+---
+
+<MainLayout title="Jan Grudziński | IT Specialist & Telecom Engineer">
+    <Navigation />
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text" data-aos="fade-up">
+                    <p class="greeting">Cześć, jestem</p>
+                    <h1>Jan Grudziński</h1>
+                    <h2 class="dynamic-text">
+                        IT Specialist | Telecommunications Engineer
+                    </h2>
+                    <p class="hero-description">
+                        Łączę świat telekomunikacji z nowoczesnymi technologiami
+                        webowymi i analizą danych.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn-primary">Skontaktuj się</a
+                        >
+                        <a href="#experience" class="btn-secondary"
+                            >Moje doświadczenie</a
+                        >
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left">
+                    <div class="image-wrapper">
+                        <picture>
+                            <source srcset="/profile.webp" type="image/webp" />
+                            <img
+                                src="/profile.jpg"
+                                alt="Jan Grudziński"
+                                width="600"
+                                height="855"
+                            />
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>O mnie</h2>
+                    <div class="line"></div>
+                </div>
+                <div
+                    class="about-content"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                >
+                    <p>
+                        Jestem inżynierem telekomunikacji z doświadczeniem
+                        przechodzącym od utrzymania infrastruktury sieciowej po
+                        administrację projektami webowymi. Obecnie w firmie
+                        Clever Investment odpowiadam za technologiczną stronę
+                        obecności grupy w sieci, w tym projektowanie i
+                        administrację stronami WordPress, wsparcie e-commerce
+                        oraz analizę danych.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Doświadczenie</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="timeline">
+                    <!-- Job 1 -->
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-date">Lis 2025 - Obecnie</div>
+                        <div class="timeline-content">
+                            <h3>Asystent IT</h3>
+                            <h4>Clever Investment</h4>
+                            <ul>
+                                <li>
+                                    Wsparcie techniczne użytkowników i systemów
+                                    IT.
+                                </li>
+                                <li>
+                                    Projektowanie i rozwój stron internetowych w
+                                    WordPress (Elementor, Oxygen).
+                                </li>
+                                <li>
+                                    Aktualizacja i utrzymanie firmowych stron
+                                    internetowych.
+                                </li>
+                                <li>
+                                    Realizacja i obsługa stron: <a
+                                        href="https://mozaikamagazine.eu"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        ><strong>mozaikamagazine.eu</strong></a
+                                    >,
+                                    <a
+                                        href="https://cleverinvestment.pl"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        ><strong>cleverinvestment.pl</strong></a
+                                    >.
+                                </li>
+                            </ul>
+                            <span class="role-tag">WordPress</span>
+                            <span class="role-tag">Elementor/Oxygen</span>
+                        </div>
+                    </div>
+
+                    <!-- Job 1b -->
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-date">Sie 2025 - Lis 2025</div>
+                        <div class="timeline-content">
+                            <h3>Asystent zarządu ds. marketingu</h3>
+                            <h4>Clever Investment</h4>
+                            <ul>
+                                <li>
+                                    Analiza danych sprzedażowych i e-commerce.
+                                </li>
+                                <li>Praca z arkuszami Microsoft Excel.</li>
+                                <li>
+                                    Analiza ruchu i danych użytkowników w Google
+                                    Analytics.
+                                </li>
+                                <li>
+                                    Wsparcie działań analitycznych i
+                                    raportowych.
+                                </li>
+                            </ul>
+                            <span class="role-tag">E-commerce</span>
+                            <span class="role-tag">Google Analytics</span>
+                            <span class="role-tag">Excel</span>
+                        </div>
+                    </div>
+
+                    <!-- Job 2 -->
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-date">Lis 2022 - Lip 2024</div>
+                        <div class="timeline-content">
+                            <h3>Specjalista ds. nadzoru sieci</h3>
+                            <h4>Cellnex Poland</h4>
+                            <p>
+                                Całodobowy nadzór nad systemami
+                                telekomunikacyjnymi, koordynacja usuwania
+                                awarii, wsparcie ekip terenowych.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Job 3 -->
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-date">Paź 2019 - Cze 2022</div>
+                        <div class="timeline-content">
+                            <h3>Junior Vendor Management Specialist</h3>
+                            <h4>Ericsson</h4>
+                            <p>
+                                Obsługa ticketów błędów, zarządzanie kontami
+                                podwykonawców, audyty jakości/BHP,
+                                przygotowywanie kwerend SQL.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Job 4 -->
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-date">Sie 2018 - Sie 2019</div>
+                        <div class="timeline-content">
+                            <h3>Młodszy specjalista ds. analizy sieci</h3>
+                            <h4>Open Investments</h4>
+                            <p>
+                                Pomiary zasięgu sieci P4 (Play) przy użyciu
+                                oprogramowania TEMS Investigation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Umiejętności</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card" data-aos="flip-left">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h3>IT & Web</h3>
+                        <ul>
+                            <li>WordPress (Elementor, Oxygen)</li>
+                            <li>HTML5 & CSS3</li>
+                            <li>E-commerce</li>
+                        </ul>
+                    </div>
+                    <div
+                        class="skill-card"
+                        data-aos="flip-left"
+                        data-aos-delay="100"
+                    >
+                        <i class="fa-solid fa-database"></i>
+                        <h3>Data & Tools</h3>
+                        <ul>
+                            <li>SQL</li>
+                            <li>MS Excel</li>
+                            <li>Google Analytics</li>
+                            <li>Generative AI</li>
+                        </ul>
+                    </div>
+                    <div
+                        class="skill-card"
+                        data-aos="flip-left"
+                        data-aos-delay="200"
+                    >
+                        <i class="fa-solid fa-network-wired"></i>
+                        <h3>Telekomunikacja</h3>
+                        <ul>
+                            <li>Sieci komórkowe</li>
+                            <li>Nadzór systemów</li>
+                            <li>TEMS Investigation</li>
+                            <li>Cyberbezpieczeństwo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Edukacja i Certyfikaty</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="education-grid">
+                    <div class="edu-card" data-aos="fade-right">
+                        <h3>Politechnika Warszawska</h3>
+                        <p class="edu-degree">Inżynier Telekomunikacji</p>
+                        <p class="edu-year">Paź 2015 - Paź 2019</p>
+                        <p class="edu-desc">
+                            Specjalizacja: Radiokomunikacja i Techniki
+                            Multimedialne.<br />
+                            <strong>Praca dyplomowa:</strong> Projekt i implementacja
+                            aplikacji mobilnej (Java, Android) do monitorowania poziomu
+                            hałasu zgodnie z normami BHP.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="certs-list" data-aos="fade-up">
+                    <h3>Certyfikaty</h3>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-certificate"></i>
+                            <a
+                                href="https://tryhackme.com/p/grudek?tab=badges"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="cert-link">Moje Odznaki</a
+                            >
+                            – TryHackMe
+                            <div class="tryhackme-badge-wrapper">
+                                <iframe
+                                    src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2315388"
+                                    title="Profil TryHackMe – Jan Grudziński"
+                                    loading="lazy"
+                                    scrolling="no"
+                                    class="tryhackme-badge"></iframe>
+                            </div>
+                            <div class="thm-badges-grid">
+                                <ThmBadge
+                                    title="cat linux.txt"
+                                    description="Being competent in Linux"
+                                    percentage="38.5%"
+                                    imgSrc="https://assets.tryhackme.com/img/badges/linux.png"
+                                />
+                                <ThmBadge
+                                    title="7 Day Streak"
+                                    description="Achieving a 7 day hacking streak"
+                                    percentage="27.3%"
+                                    imgSrc="https://assets.tryhackme.com/img/badges/streak7.png"
+                                />
+                            </div>
+                            <p style="margin-top: 1rem;">
+                                <a href="/cybersecurity" class="cert-link"
+                                    >Zobacz wszystkie odznaki &rarr;</a>
+                            </p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-certificate"></i>
+                            <a
+                                href="https://app.letsdefend.io/my-rewards/detail/1a0d6a6b-df46-412e-9a32-d8d13e91290f"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="cert-link">Cyber Kill Chain</a
+                            >
+                            – LetsDefend (Sie 2024)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Realizowane Projekty</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="projects-grid">
+                    <ProjectCard
+                        href="https://mozaikamagazine.eu"
+                        imgSrc="/img/mozaika.webp"
+                        alt="Mozaika Magazine Screenshot"
+                        title="Mozaika Magazine"
+                        description="Strona internetowa magazynu stworzona dla Clever Investment. Projektowanie i wdrożenie."
+                    />
+                    <ProjectCard
+                        href="https://cleverinvestment.pl"
+                        imgSrc="/img/clever.webp"
+                        alt="Clever Investment Screenshot"
+                        title="Clever Investment"
+                        description="Strona korporacyjna. Aktualizacja, utrzymanie i rozwój funkcjonalności."
+                        delay={100}
+                    />
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Kontakt</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="contact-wrapper">
+                    <div class="contact-form-container" data-aos="fade-right">
+                        <form
+                            id="contact-form"
+                            action="https://formspree.io/f/mnjbzoyy"
+                            method="POST"
+                            target="_blank"
+                        >
+                            <div class="form-group">
+                                <label for="name">Imię</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    required
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    required
+                                />
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <input
+                                    type="checkbox"
+                                    id="consent"
+                                    name="consent"
+                                    required
+                                />
+                                <label for="consent" class="consent-label"
+                                    >Wyrażam zgodę na przetwarzanie podanych
+                                    powyżej danych osobowych zawartych w
+                                    formularzu kontaktowym w celu i w zakresie
+                                    niezbędnym do obsługi tego zgłoszenia.
+                                    Zostałem poinformowany, że podanie danych
+                                    jest dobrowolne, ale niezbędne do wysłania
+                                    wiadomości oraz że przysługuje mi prawo
+                                    dostępu do moich danych, ich poprawiania i
+                                    żądania usunięcia. Szczegóły zawarte są w <a
+                                        href="/privacy"
+                                        target="_blank">Polityce Prywatności</a
+                                    >.</label
+                                >
+                            </div>
+                            <button type="submit" class="btn-primary"
+                                >Wyślij wiadomość</button
+                            >
+                        </form>
+                    </div>
+                    <div class="contact-info" data-aos="fade-left">
+                        <h3>Znajdź mnie w sieci</h3>
+                        <div class="social-links">
+                            <a
+                                href="https://www.linkedin.com/in/jan-grudzinski/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="social-btn linkedin"
+                            >
+                                <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                            </a>
+                            <a
+                                href="https://github.com/Grudzio"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="social-btn github"
+                            >
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                            <a
+                                href="https://tryhackme.com/p/grudek"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="social-btn tryhackme"
+                            >
+                                <i class="fa-solid fa-user-secret"></i> TryHackMe
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <Footer />
+    <CookieBanner />
+</MainLayout>
+
+<style>
+    .thm-badges-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+</style>

@@ -1,0 +1,122 @@
+---
+interface Props {
+    title: string;
+    description: string;
+    percentage?: string;
+    imgSrc: string;
+}
+
+const { title, description, percentage, imgSrc } = Astro.props;
+---
+
+<article class="thm-badge-card" data-aos="fade-up">
+    <div class="badge-icon">
+        <img src={imgSrc} alt={title} loading="lazy" />
+        {
+            percentage && (
+                <div class="badge-check">
+                    <i class="fa-solid fa-circle-check" />
+                </div>
+            )
+        }
+    </div>
+    <div class="badge-info">
+        <p class="badge-title">{title}</p>
+        <p class="badge-desc">{description}</p>
+        {percentage && <span class="badge-rarity">Common: {percentage}</span>}
+    </div>
+</article>
+
+<style>
+    .thm-badge-card {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
+        padding: 1.2rem;
+        transition: all 0.3s ease;
+        margin-bottom: 1rem;
+    }
+
+    .thm-badge-card:hover {
+        background: rgba(255, 255, 255, 0.06);
+        border-color: var(--primary-color);
+        transform: translateY(-3px);
+    }
+
+    .badge-icon {
+        position: relative;
+        flex-shrink: 0;
+        width: 60px;
+        height: 60px;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .badge-icon img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+    .badge-check {
+        position: absolute;
+        bottom: -5px;
+        right: -5px;
+        color: var(--primary-color);
+        background: var(--bg-color);
+        border-radius: 50%;
+        font-size: 0.9rem;
+        line-height: 1;
+    }
+
+    .badge-info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    .badge-title {
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 700;
+        font-size: 1.1rem;
+        margin: 0;
+        color: #fff;
+    }
+
+    .badge-desc {
+        font-size: 0.9rem;
+        color: #b0b0b0;
+        margin: 0;
+        line-height: 1.4;
+    }
+
+    .badge-rarity {
+        font-size: 0.75rem;
+        color: var(--primary-color);
+        opacity: 0.8;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-top: 0.2rem;
+    }
+
+    @media (max-width: 480px) {
+        .thm-badge-card {
+            gap: 1rem;
+            padding: 1rem;
+        }
+        .badge-icon {
+            width: 50px;
+            height: 50px;
+        }
+        .badge-title {
+            font-size: 1rem;
+        }
+    }
+</style>

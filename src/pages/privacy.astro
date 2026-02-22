@@ -1,0 +1,81 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<MainLayout title="Polityka Prywatności | Jan Grudziński">
+    <Navigation />
+
+    <section class="privacy-section">
+        <div class="container">
+            <a href="/" class="back-link">&larr; Powrót do strony głównej</a>
+
+            <div class="privacy-content">
+                <h1>Polityka Prywatności</h1>
+                <p>Ostatnia aktualizacja: {new Date().toLocaleDateString('pl-PL')}</p>
+
+                <h2>1. Administrator Danych</h2>
+                <p>
+                    Administratorem Twoich danych osobowych jest <strong>Jan Grudziński</strong>.
+                    W sprawach związanych z ochroną danych osobowych możesz skontaktować się, korzystając z formularza
+                    kontaktowego dostępnego na stronie głównej.
+                </p>
+
+                <h2>2. Jakie dane zbieramy i w jakim celu?</h2>
+                <p>Zbieramy dane w dwóch głównych celach:</p>
+                <ul>
+                    <li><strong>Kontakt (Formularz):</strong> Jeśli skorzystasz z formularza kontaktowego, przetwarzamy
+                        podane przez Ciebie dane (imię, adres e-mail, treść wiadomości) w celu udzielenia odpowiedzi na
+                        Twoje zapytanie. Podanie tych danych jest dobrowolne, ale niezbędne do nawiązania kontaktu.</li>
+                    <li><strong>Analityka (Google Analytics, Microsoft Clarity):</strong> Jeśli wyrazisz na to zgodę (w
+                        banerze cookies),
+                        strona zbiera anonimowe dane statystyczne dotyczące Twojej wizyty (np. czas spędzony na stronie,
+                        odwiedzone sekcje, kraj pochodzenia, przewijanie, mapy cieplne). Służy to ulepszaniu działania
+                        strony.</li>
+                </ul>
+
+                <h2>3. Narzędzia Zewnętrzne i Odbiorcy Danych</h2>
+                <p>Twoje dane mogą być przetwarzane przez zaufanych partnerów dostarczających usługi techniczne:</p>
+                <ul>
+                    <li><strong>Formspree (Formspree, Inc., USA):</strong> Obsługuje formularz kontaktowy.</li>
+                    <li><strong>Google Analytics (Google Ireland Ltd. / Google LLC, USA):</strong> Służy do analizy ruchu na stronie.</li>
+                    <li><strong>Microsoft Clarity (Microsoft Corporation, USA):</strong> Narzędzie analityczne rejestrujące anonimowo interakcje użytkownika.</li>
+                    <li><strong>Cloudflare Pages:</strong> Dostawca hostingu strony.</li>
+                </ul>
+
+                <h2>4. Pliki Cookies</h2>
+                <p>Strona wykorzystuje pliki cookies (ciasteczka) w celach analitycznych.</p>
+                <ul>
+                    <li><strong>Wymagane:</strong> Pliki niezbędne do zapamiętania Twojej decyzji dotyczącej zgody na cookies.</li>
+                    <li><strong>Analityczne (Google Analytics, Microsoft Clarity):</strong> Instalowane tylko po wyrażeniu przez Ciebie dobrowolnej zgody.</li>
+                </ul>
+
+                <h2>5. Twoje Prawa</h2>
+                <p>Zgodnie z RODO przysługuje Ci prawo do dostępu, sprostowania, usunięcia, ograniczenia przetwarzania, wniesienia sprzeciwu oraz skargi do organu nadzorczego.</p>
+
+                <h2>6. Kontakt</h2>
+                <p>W razie pytań dotyczących polityki prywatności, proszę o kontakt poprzez formularz na stronie głównej.</p>
+            </div>
+        </div>
+    </section>
+
+    <Footer />
+</MainLayout>
+
+<style>
+    .privacy-content {
+        background: var(--card-bg);
+        padding: 40px;
+        border-radius: 10px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        color: #d0d0d0;
+    }
+    .privacy-content h1, .privacy-content h2 { color: var(--primary-color); }
+    .privacy-content h2 { margin-top: 2rem; font-size: 1.5rem; }
+    .privacy-content ul { list-style: disc; margin-left: 20px; margin-bottom: 1rem; }
+    .privacy-content li { margin-bottom: 0.5rem; }
+    .back-link { display: inline-block; margin-bottom: 20px; color: var(--accent-color); font-weight: 600; }
+    .back-link:hover { text-decoration: underline; }
+</style>

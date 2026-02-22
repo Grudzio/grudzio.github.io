@@ -1,0 +1,71 @@
+---
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "Jan Grudziński - IT Specialist & Telecommunications Engineer. Portfolio." } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="google-site-verification" content="google98b781c99f05c343" />
+    <title>{title}</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content="Inżynier telekomunikacji łączący świat sieci z nowoczesnymi technologiami webowymi i cyberbezpieczeństwem." />
+    <meta property="og:image" content="https://grudzio.github.io/profile.jpg" />
+    <meta property="og:url" content="https://grudzio.github.io" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    </noscript>
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    </noscript>
+
+    <!-- Cookie Consent & Analytics Placeholder -->
+    <script is:inline>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied'
+        });
+    </script>
+</head>
+<body>
+    <slot />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" is:inline></script>
+    <script>
+        import "../scripts/main.js";
+    </script>
+</body>
+</html>
+
+<style is:global>
+    @import "../styles/style.css";
+</style>

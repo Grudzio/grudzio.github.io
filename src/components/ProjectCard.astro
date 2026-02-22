@@ -1,0 +1,22 @@
+---
+interface Props {
+    href: string;
+    imgSrc: string;
+    alt: string;
+    title: string;
+    description: string;
+    delay?: number;
+}
+
+const { href, imgSrc, alt, title, description, delay = 0 } = Astro.props;
+---
+<a href={href} target="_blank" rel="noopener noreferrer" class="project-card" data-aos="zoom-in" data-aos-delay={delay}>
+    <img src={imgSrc} alt={alt} class="project-image" loading="lazy">
+    <div class="project-content">
+        <h3>{title}</h3>
+        <p>{description}</p>
+        <div class="project-links">
+            <span class="btn-sm btn-secondary">Zobacz live <i class="fa-solid fa-external-link-alt"></i></span>
+        </div>
+    </div>
+</a>

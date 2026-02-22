@@ -1,0 +1,41 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<MainLayout title="Telekomunikacja | Jan Grudziński">
+    <Navigation />
+
+    <main class="container page-content">
+        <section class="section">
+            <div class="section-header" data-aos="fade-up">
+                <h1>Telekomunikacja</h1>
+                <div class="line"></div>
+            </div>
+            <div class="content-text" data-aos="fade-up">
+                <p>Jako inżynier telekomunikacji (absolwent PW), posiadam solidne fundamenty w zakresie działania sieci komórkowych oraz nadzoru nad infrastrukturą krytyczną.</p>
+                
+                <h2>Doświadczenie Zawodowe</h2>
+                <ul>
+                    <li><strong>Cellnex Poland:</strong> Całodobowy nadzór nad systemami telekomunikacyjnymi i koordynacja usuwania awarii.</li>
+                    <li><strong>Ericsson:</strong> Zarządzanie vendorami i analiza ticketów technicznych.</li>
+                    <li><strong>Open Investments:</strong> Pomiary terenowe zasięgu sieci (TEMS Investigation).</li>
+                </ul>
+
+                <h2>Edukacja</h2>
+                <p><strong>Politechnika Warszawska</strong> – Inżynier Telekomunikacji (Radiokomunikacja i Techniki Multimedialne).</p>
+                <p>Praca dyplomowa dotyczyła monitorowania hałasu za pomocą autorskiej aplikacji na system Android.</p>
+            </div>
+        </section>
+    </main>
+
+    <Footer />
+</MainLayout>
+
+<style>
+    .page-content { padding-top: 120px; min-height: 80vh; }
+    .section-header h1 { color: var(--primary-color); font-size: 2.5rem; margin-bottom: 0.5rem; }
+    .content-text { margin-top: 2rem; color: #d0d0d0; line-height: 1.8; }
+    .content-text h2 { color: #fff; margin-top: 2.5rem; margin-bottom: 1rem; }
+</style>
