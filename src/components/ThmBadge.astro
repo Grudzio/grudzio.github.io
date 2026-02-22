@@ -4,12 +4,20 @@ interface Props {
     description: string;
     percentage?: string;
     imgSrc: string;
+    href?: string;
 }
 
-const { title, description, percentage, imgSrc } = Astro.props;
+const { title, description, percentage, imgSrc, href } = Astro.props;
+const Element = href ? "a" : "article";
 ---
 
-<article class="thm-badge-card" data-aos="fade-up">
+<Element
+    href={href}
+    target={href ? "_blank" : undefined}
+    rel={href ? "noopener noreferrer" : undefined}
+    class={`thm-badge-card ${href ? "is-link" : ""}`}
+    data-aos="fade-up"
+>
     <div class="badge-icon">
         <img src={imgSrc} alt={title} loading="lazy" />
         {
@@ -25,7 +33,7 @@ const { title, description, percentage, imgSrc } = Astro.props;
         <p class="badge-desc">{description}</p>
         {percentage && <span class="badge-rarity">Common: {percentage}</span>}
     </div>
-</article>
+</Element>
 
 <style>
     .thm-badge-card {
@@ -38,6 +46,7 @@ const { title, description, percentage, imgSrc } = Astro.props;
         padding: 1.2rem;
         transition: all 0.3s ease;
         margin-bottom: 1rem;
+        text-decoration: none;
     }
 
     .thm-badge-card:hover {
