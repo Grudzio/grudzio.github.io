@@ -63,8 +63,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function loadAnalytics() {
-    // Check if script is already loaded
-    if (document.querySelector('script[src*="googletagmanager"]')) return;
+    // Check if scripts are already loaded
+    if (document.querySelector('script[src*="googletagmanager"]') || window.clarity) return;
 
     // Grant consent in GTM dataLayer
     window.gtag('consent', 'update', {
@@ -85,5 +85,12 @@ function loadAnalytics() {
         gtag('config', 'G-TD8GXRNM5G');
     };
 
-    console.log('Google Analytics loaded (Consent Granted)');
+    // Load Microsoft Clarity dynamically
+    (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+        t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i + "?ref=bwt";
+        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "vlftt1v8vo");
+
+    console.log('Analytics and Clarity loaded (Consent Granted)');
 }
