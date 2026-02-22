@@ -7,7 +7,13 @@ interface Props {
     href?: string;
 }
 
-const { title, description, percentage, imgSrc, href } = Astro.props;
+const {
+    title,
+    description,
+    percentage,
+    imgSrc,
+    href = "https://tryhackme.com/p/grudek?tab=badges",
+} = Astro.props;
 const Element = href ? "a" : "article";
 ---
 

@@ -7,6 +7,17 @@ interface Props {
 }
 
 const { title, issuedDate, pdfLink, thumbnailSrc } = Astro.props;
+
+// Próba sformatowania daty na polski, jeśli została podana w formacie rozpoznawalnym przez Date
+const formattedDate = issuedDate
+    ? !isNaN(Date.parse(issuedDate))
+        ? new Date(issuedDate).toLocaleDateString("pl-PL", {
+              day: "numeric",
+              month: "long",
+              year: "numeric",
+          })
+        : issuedDate // jeśli nie da się sparsować, zostawiamy oryginał
+    : null;
 ---
 
 <div class="cert-card" data-aos="fade-up">
@@ -39,9 +50,9 @@ const { title, issuedDate, pdfLink, thumbnailSrc } = Astro.props;
         <div class="cert-header">
             <h3>{title}</h3>
             {
-                issuedDate && (
+                formattedDate && (
                     <time class="cert-date">
-                        <i class="fa-regular fa-calendar" /> {issuedDate}
+                        <i class="fa-regular fa-calendar" /> {formattedDate}
                     </time>
                 )
             }
@@ -91,21 +102,33 @@ const { title, issuedDate, pdfLink, thumbnailSrc } = Astro.props;
         position: relative;
         flex: 0 0 250px;
         min-height: 180px;
-        background: rgba(0, 0, 0, 0.2);
+        background: rgba(
+            0,
+            0,
+            0,
+            0.2
+        ); /* Ciemniejsze tło, spójne z resztą strony */
         border-right: 1px solid rgba(255, 255, 255, 0.05);
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .cert-thumbnail a {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
         height: 100%;
         position: relative;
     }
 
     .cert-thumbnail img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain; /* Certyfikat wyświetla się w całości bez obcinania */
         display: block;
     }
 
