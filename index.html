@@ -57,6 +57,15 @@
 
     <!-- Google Tag Manager (To be replaced with actual ID) -->
     <!-- End Google Tag Manager -->
+
+    <!-- Clarity tracking code for https://grudzio.github.io/ -->
+    <script>
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i + "?ref=bwt";
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "vlftt1v8vo");
+    </script>
 </head>
 
 <body>
@@ -99,7 +108,7 @@
                 <div class="image-wrapper">
                     <picture>
                         <source srcset="profile.webp" type="image/webp">
-                        <img src="profile.jpg" alt="Jan Grudziński" width="600" height="855" fetchpriority="high">
+                        <img src="profile.jpg" alt="Jan Grudziński" width="600" height="855">
                     </picture>
                 </div>
             </div>
@@ -388,9 +397,14 @@
                             <label for="email">Email</label>
                             <input type="email" id="email" name="email" required>
                         </div>
-                        <div class="form-group">
-                            <label for="message">Wiadomość</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent" class="consent-label">Wyrażam zgodę na przetwarzanie podanych powyżej
+                                danych osobowych zawartych w formularzu kontaktowym w celu i w zakresie niezbędnym do
+                                obsługi tego zgłoszenia. Zostałem poinformowany, że podanie danych jest dobrowolne, ale
+                                niezbędne do wysłania wiadomości oraz że przysługuje mi prawo dostępu do moich danych,
+                                ich poprawiania i żądania usunięcia. Szczegóły zawarte są w <a href="privacy.html"
+                                    target="_blank">Polityce Prywatności</a>.</label>
                         </div>
                         <button type="submit" class="btn-primary">Wyślij wiadomość</button>
                     </form>
@@ -431,7 +445,8 @@
     <!-- Cookie Banner (Hidden by default, shown by JS) -->
     <div id="cookie-banner" class="cookie-banner">
         <div class="cookie-content">
-            <p>Ta strona używa plików cookies w celach analitycznych (Google Analytics). Czy wyrażasz zgodę na ich
+            <p>Ta strona używa plików cookies w celach analitycznych (m.in. Google Analytics, Microsoft Clarity). Czy
+                wyrażasz zgodę na ich
                 użycie?</p>
             <div class="cookie-buttons">
                 <button id="accept-cookies" class="btn-primary btn-sm">Zgadzam się</button>

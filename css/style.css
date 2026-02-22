@@ -612,6 +612,38 @@ section {
 }
 
 
+/* Formularz - zgody RODO */
+.form-group.checkbox-group {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.form-group.checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin-top: 4px;
+    accent-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.consent-label {
+    font-size: 0.8rem !important;
+    color: #a0a0a0 !important;
+    line-height: 1.4;
+    margin-bottom: 0 !important;
+    text-align: left;
+}
+
+.consent-label a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.consent-label a:hover {
+    color: var(--hover-color);
+}
+
 /* Footer */
 footer {
     background: #000;
