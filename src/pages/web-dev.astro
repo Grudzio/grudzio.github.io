@@ -15,16 +15,32 @@ import ProjectCard from '../components/ProjectCard.astro';
                 <div class="line"></div>
             </div>
             <div class="content-text" data-aos="fade-up">
-                <p>Tworzę nowoczesne strony internetowe, łącząc estetykę z wydajnością. Specjalizuję się w systemie WordPress, ale rozwijam się również w kierunku nowoczesnych frameworków (Astro, React).</p>
+                <p>Tworzę nowoczesne strony internetowe, łącząc estetykę z wydajnością. Specjalizuję się w systemie WordPress, ale rozwijam się również w kierunku nowoczesnych frameworków – projekty buduję w Astro z TypeScript, deployując na Cloudflare Pages/Workers.</p>
                 
                 <h2>Moje Projekty</h2>
                 <div class="projects-grid">
+                    <ProjectCard 
+                        href="https://letsbeclever.org/edukacja-ai/"
+                        imgSrc="/img/letsbeclever.png"
+                        alt="Let's Be Clever – Platforma e-learningowa AI"
+                        title="Let's Be Clever – Edukacja AI"
+                        description="Wdrożenie platformy e-learningowej (SenseiLMS) z systemem zapisów na szkolenia AI i dynamicznymi formularzami kontaktowymi."
+                    />
+                    <ProjectCard 
+                        href="https://lixia.pl"
+                        imgSrc="/img/lixia.png"
+                        alt="Lixia – strona korporacyjna"
+                        title="Lixia.pl – Strona korporacyjna"
+                        description="Projekt i budowa wielojęzycznej strony korporacyjnej (PL/EN) w Astro 5 + TypeScript, z dark/light mode i deploymentem na Cloudflare Workers. Projekt w toku."
+                        delay={100}
+                    />
                     <ProjectCard 
                         href="https://mozaikamagazine.eu"
                         imgSrc="/img/mozaika.webp"
                         alt="Mozaika Magazine"
                         title="Mozaika Magazine"
-                        description="Wdrożenie i optymalizacja strony magazynu na WordPress."
+                        description="Wdrożenie i optymalizacja strony magazynu z e-commerce WooCommerce, panelem prenumeratora i integracją SEO."
+                        delay={200}
                     />
                     <ProjectCard 
                         href="https://cleverinvestment.pl"
@@ -32,7 +48,7 @@ import ProjectCard from '../components/ProjectCard.astro';
                         alt="Clever Investment"
                         title="Clever Investment"
                         description="Administracja i rozwój portalu korporacyjnego."
-                        delay={100}
+                        delay={300}
                     />
                 </div>
 
@@ -44,7 +60,7 @@ import ProjectCard from '../components/ProjectCard.astro';
                     </div>
                     <div class="skill-card">
                         <h3>Frontend</h3>
-                        <p>HTML5, CSS3 (Flexbox/Grid), JavaScript, Astro.</p>
+                        <p>HTML5, CSS3 (Flexbox/Grid), JavaScript, TypeScript, Astro 5.</p>
                     </div>
                 </div>
             </div>
