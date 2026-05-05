@@ -57,27 +57,16 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function loadAnalytics() {
-    // Check if scripts are already loaded
-    if (document.querySelector('script[src*="googletagmanager"]') || window.clarity) return;
-
     // Grant consent in GTM dataLayer
-    window.gtag('consent', 'update', {
-        'ad_storage': 'granted',
-        'analytics_storage': 'granted'
-    });
+    if (typeof window.gtag === 'function') {
+        window.gtag('consent', 'update', {
+            'ad_storage': 'granted',
+            'analytics_storage': 'granted'
+        });
+    }
 
-    // Load the GTM Script dynamically
-    const gaScript = document.createElement('script');
-    gaScript.async = true;
-    gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-TD8GXRNM5G';
-    document.head.appendChild(gaScript);
-
-    gaScript.onload = () => {
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-TD8GXRNM5G');
-    };
+    // Check if Clarity is already loaded
+    if (window.clarity) return;
 
     // Load Microsoft Clarity dynamically
     (function (c, l, a, r, i, t, y) {

@@ -76,6 +76,7 @@ const {
         </noscript>
 
         <!-- Cookie Consent & Analytics Placeholder -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-TD8GXRNM5G" is:inline></script>
         <script is:inline>
             window.dataLayer = window.dataLayer || [];
             function gtag() {
@@ -86,6 +87,9 @@ const {
                 ad_storage: "denied",
                 analytics_storage: "denied",
             });
+
+            gtag("js", new Date());
+            gtag("config", "G-TD8GXRNM5G");
         </script>
     </head>
     <body>
