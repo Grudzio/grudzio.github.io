@@ -54,12 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('cookieConsent', 'denied');
         cookieBanner.style.display = 'none';
     });
-
-    // Privacy Policy Mock - REMOVED to allow simple navigation
-    // privacyLink.addEventListener('click', (e) => {
-    //     e.preventDefault();
-    //     alert("Tu będzie treść Polityki Prywatności zgodnie z RODO (wyskakujące okno).");
-    // });
 });
 
 function loadAnalytics() {
@@ -90,7 +84,7 @@ function loadAnalytics() {
         c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
         t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i + "?ref=bwt";
         y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-    })(window, document, "clarity", "script", "vlftt1v8vo");
+    })(window, document, "clarity", "script", "wmht9ohmpv");
 
     console.log('Analytics and Clarity loaded (Consent Granted)');
 }
